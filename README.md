@@ -1,2 +1,10 @@
-# glowing-sniffle
-Discussion 3: Array vs Array Lists for my programming in JAVA class,
+# Discussion 3: Array vs. ArrayList for CSC 262 - Programming in JAVA class
+
+When working in Java, the two data structures that come up often are arrays and ArrayLists. On the surface, they seem interchangeable since both hold collections of elements, but once you start working with them, the differences become clear.
+An array is a fixed container. You declare it with a set size, and that size is locked in for the life of the program. This makes arrays very efficient because Java allocates a single contiguous block of memory upfront, enabling fast index-based access. They are also flexible, as they can hold primitive types such as int, double, and char directly without conversion. If you already know exactly how many elements you need, arrays are a clean and excellent choice.
+
+An ArrayList works a bit differently. It comes from the Java Collections Framework (java.util.ArrayLists) and is designed to resize itself automatically as you add or remove elements. This specifically makes it more practical for situations where the data is unpredictable or constantly changing. The tradeoff is that ArrayLists can only store objects, not primitives, so instead of using int, you use Integer, and instead of double, you use Double. Java handles most of this automatically through autoboxing, so it rarely gets in the way, but it is worth understanding what is happening behind the scenes.
+
+The core conceptual difference really comes down to control versus convenience. Arrays give you tight control over memory and perform well, but they require you to know your data size in advance and lack built-in tools for manipulation. ArrayLists sacrifice some performance for a much richer set of methods, such as .add(), .remove(), .contains(), and .size(), which make managing dynamic data significantly easier.
+
+Ultimately, neither is universally better. Choosing between them depends on what your program needs. If your project prioritizes predictability and speed, the best use case is arrays; if it prioritizes flexibility and ease of use, the best choice is ArrayLists.
