@@ -8,3 +8,9 @@ An ArrayList works a bit differently. It comes from the Java Collections Framewo
 The core conceptual difference really comes down to control versus convenience. Arrays give you tight control over memory and perform well, but they require you to know your data size in advance and lack built-in tools for manipulation. ArrayLists sacrifice some performance for a much richer set of methods, such as .add(), .remove(), .contains(), and .size(), which make managing dynamic data significantly easier.
 
 Ultimately, neither is universally better. Choosing between them depends on what your program needs. If your project prioritizes predictability and speed, the best use case is arrays; if it prioritizes flexibility and ease of use, the best choice is ArrayLists.
+
+`References`
+
+Liang, Y. D. (2020). Introduction to Java programming and data structures (12th ed.). Pearson.
+Oracle. (2024). Class ArrayList. Java SE 21 Documentation. https://docs.oracle.com/en/java/docs/api/java.base/java/util/ArrayList.html
+Oracle. (2024). Arrays (Java SE 21). Java SE 21 Documentation. https://docs.oracle.com/en/java/docs/api/java.base/java/util/Arrays.html
