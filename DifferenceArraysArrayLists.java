@@ -5,7 +5,7 @@ import java.util.Arrays;
  * Difference between Arrays and ArrayLists in Java
  */
 
-public class Main {
+public class DifferenceArraysArrayLists {
     public static void main(String[] args) {
 
         // Array demonstration
